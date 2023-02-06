@@ -1,0 +1,25 @@
+ 
+spring:
+  datasource:
+    url: jdbc:mysql://178.128.109.9:3306/entrance_test?useSSL=false
+    username: test01
+    password: PlsDoNotShareThePass123@
+    
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+nexlesoft:
+  app:
+    jwtSecret: vietthien
+    jwtAccessExpirationMs: 3600000
+    jwtRefreshExpirationMs: 2592000000
+    
+logging:
+  level:
+    org.springframework.security: TRACE
+   
